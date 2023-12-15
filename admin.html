@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="admin.css">
+        <script src="admin.js"></script>
+    </head>
+    <body>
+        <div class="main">
+            <h1>ADMIN DASHBOARD</h1>
+            <hr>
+            <div>
+                <a href="admin.html">
+                    <img src="homebutton.png">
+                </a>
+                <button onclick="update()">Update Exam</button>
+                <button onclick="result()">Result</button>
+            </div><br>
+            <div class="update" id="update">
+                <div class="qoptions">
+                    <button>Add Question</button><br>
+                    <button>remove Question</button><br>
+                    <button>Update Question</button><br>
+                </div>
+                <div class="qdisplay">
+                    <h1>Questions display</h1>
+                </div>
+            </div>
+            <div class="result" id="result">
+                <div class="csearch">
+                    <input type="search" placeholder="candidate id">
+                </div>
+                <div class="cdisplay">
+                    <h1>candidate</h1>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<!-- <div>Update Exam</div>
+<div>Result</div> -->

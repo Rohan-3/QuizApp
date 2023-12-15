@@ -1,0 +1,32 @@
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 50px;
+}
+.main
+{
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.update,.result
+{
+    display: none;
+}
+.qoptions,.qdisplay,.csearch,.cdisplay
+{
+    border: 1px solid black;
+    padding: 20px;
+}
+.qoptions button
+{
+    margin-bottom: 5px;
+}
+img
+{
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+}
