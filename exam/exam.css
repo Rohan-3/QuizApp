@@ -1,0 +1,63 @@
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.main
+{
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color:olive;
+}
+.e1
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: saddlebrown;
+}
+hr
+{
+    border-top: 1px dashed sienna;
+}
+h3
+{
+    margin-left: 400px;
+}
+h2
+{
+    color:darkolivegreen;
+}
+.b2
+{
+    margin-left: 600px;
+}
+a
+{
+    padding: 10px;
+    margin-top: 15px;
+}
+a:hover
+{
+    background-color: #a4c8f0;
+    padding: 2px;
+}
+input[type="radio"]
+{
+    margin-right: 5px;
+    padding: 5px;
+}
+.b1,.b2
+{
+
+    background-color: #e2f0ff;
+    margin-top: 1em;
+    padding: 10px;
+}
+.name
+{
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
