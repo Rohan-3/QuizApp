@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <h1>Hello User !</h1>
+    <div class="nav" >
+        <img  class="logo"src="logo2.png">
+    </div>
+    <div class="main">
+        <h1 class="loginHead">Login Here !</h1>
+        <div class="inp">
+            <label>Enter Rollno</label><br/>
+            <input type="number" placeholder="Name"><br/><br/>
+            <label>Enter Password</label><br/>
+            <input type="password" placeholder="Password">
+        </div>
+        <button onclick="loginBtn()">Login</button>
+
+        <h4 class="rlink">Dont have account? <span ><a href="registration.html">Register here!</a></span></h4>
+    </div>
+    <script src="login.js"></script>
 </body>
 </html>
