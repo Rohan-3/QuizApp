@@ -8,10 +8,13 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="nav" >
+        <img  class="logo"src="../images/logo2.png">
+    </div>
     <form>
         <div class="total">
         <diV class="details">
-        <h1>Register Here !</h1>
+        <h1 class="regiterHead">Register Here !</h1>
         <label>Enter Name</label>
         <p><i class="fa fa-user icon"></i><input type="text"  class="txt" placeholder="Name" required ></p>
         <label>Enter Rollno</label>
@@ -20,17 +23,18 @@
         <p><i class="fa fa-lock icon"></i><input type="password" placeholder="Password" required class="txt"></p>
         <label>Confirm Password</label>
         <p><i class="fa fa-lock icon"></i><input type="password" placeholder="Confirm password" required class="txt"></p>
-        <p><button class="btn">SIGNUP </button></p>
+        <p><button class="btn" onclick="authenticate()">SIGNUP </button></p>
         <!-- <i class="fa fa-arrow-right arrow"></i> -->
     </diV>
-    <div class="photo">
-        <input type="image" src="person.jpg" alt="upload your image" heigth="150px" width="150px" class="img">
+    <!-- <div class="photo">
+        <input type="image" src="../images/person.jpg" alt="upload your image" heigth="150px" width="150px" class="img">
         <br>
         <br>
         <p>Upload your photo</p>
         <p><input class="file-upload-input" type="file" accept="Image/*" required></p>
-    </div>
-</div>
+    </div> -->
+  </div>
     </form>
+    <script src="auth.js"></script>
 </body>
 </html>

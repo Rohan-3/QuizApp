@@ -1,7 +1,27 @@
 .details
 {
     width:600px;
+    position: relative;
+    left: 20%;
     margin-right: 100px;
+}
+.regiterHead{
+    position: relative;
+    right: 25%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoDiv{
+    width: 400px;
+}
+.logo{
+    width: 260px;
+    height: 220x;
+    position: relative;
+    top: 0%;
 }
 
 .icon {
