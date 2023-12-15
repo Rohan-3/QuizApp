@@ -1,6 +1,6 @@
 .details
 {
-    width:500px;
+    width:600px;
     margin-right: 100px;
 }
 
@@ -13,11 +13,20 @@
 
 .txt
 {
-    width: 90%;
-    padding: 10px;
+    background-color: rgb(231, 243, 254);
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    padding: 14px;
+    width: 370px;
+    margin-top: 6px;
+    margin-bottom: 5px;
     text-align: center;
-    background-color: #F1F4F9;
-    border: 1px solid;
+}
+i {
+
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 .photo
@@ -53,13 +62,13 @@ p{
 
 .btn
 {
-    width: 95%;
-    padding: 10px;
-    text-align: center;
-    background-color: blue;
-    color: white;
-    font-weight: bolder;
     border: none;
+    border-radius: 5px;
+    padding: 13px;
+    color: white;
+    background-color: #10385a;
+    width: 66%;
+    font-size:large;
 }
 
 .img

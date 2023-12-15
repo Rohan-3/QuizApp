@@ -11,7 +11,14 @@
 }
 
 
+h3{
+    width: 100px;
+    position: relative;
+    top: 5%;
+    text-align: center;
+    right: 10%;
 
+}
 .logoDiv{
     width: 400px;
 }
@@ -45,8 +52,13 @@ input{
     width: 370px;
     margin-top: 6px;
     margin-bottom: 5px;
+    text-align: center;
+} 
+i{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
 }
-
 button{
     border: none;
     border-radius: 5px;
