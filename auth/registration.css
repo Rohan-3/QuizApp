@@ -91,12 +91,21 @@ p{
     font-size:large;
 }
 
-.img
-{
-    border: 1px solid;
-}
 
 .arrow
 {
     position:relative;
+}
+
+#pic
+{
+    width:150px;
+    height: 150px;
+    border: 1px solid;
+}
+
+#mssg
+{
+    color:red;
+    font-weight: lighter;
 }

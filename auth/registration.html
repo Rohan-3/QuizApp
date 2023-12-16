@@ -5,36 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="registration.css">
+    <script src="registration.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="nav" >
+        <form action="index.html">
         <img  class="logo"src="../images/logo2.png">
     </div>
-    <form>
         <div class="total">
         <diV class="details">
         <h1 class="regiterHead">Register Here !</h1>
         <label>Enter Name</label>
-        <p><i class="fa fa-user icon"></i><input type="text"  class="txt" placeholder="Name" required ></p>
+        <p><i class="fa fa-user icon"></i><input type="text"  class="txt" placeholder="Name" required id="t1"></p>
         <label>Enter Rollno</label>
-        <p><i class="fa fa-id-card icon"></i><input type="number"  placeholder="Roll no" class="txt" required></p>
+        <p><i class="fa fa-id-card icon"></i><input type="number"  placeholder="Roll no" class="txt" required id="t2"></p>
         <label>Enter Password</label>
-        <p><i class="fa fa-lock icon"></i><input type="password" placeholder="Password" required class="txt"></p>
+        <p><i class="fa fa-lock icon"></i><input type="password" placeholder="Password" required class="txt" id="t3"></p>
         <label>Confirm Password</label>
-        <p><i class="fa fa-lock icon"></i><input type="password" placeholder="Confirm password" required class="txt"></p>
-        <p><button class="btn" onclick="authenticate()">SIGNUP </button></p>
+        <p><i class="fa fa-lock icon"></i><input type="password" placeholder="Confirm password" required class="txt" id="t4" onkeyup="pssd()"></p>
+        <p id="mssg"></p>
+        <p><button class="btn" onclick="signup()">SIGNUP </button></p>
         <!-- <i class="fa fa-arrow-right arrow"></i> -->
     </diV>
-    <!-- <div class="photo">
-        <input type="image" src="../images/person.jpg" alt="upload your image" heigth="150px" width="150px" class="img">
+    <div class="photo">
+        <input type="image" src="../images/person.jpg" alt="upload your image" id="pic">
         <br>
         <br>
         <p>Upload your photo</p>
-        <p><input class="file-upload-input" type="file" accept="Image/*" required></p>
-    </div> -->
+        <p><input class="file-upload-input" type="file" accept="Image/*" required id="myfile" onchange="show_Img()"></p>
+    </div>
+</form>
   </div>
-    </form>
-    <script src="auth.js"></script>
 </body>
 </html>

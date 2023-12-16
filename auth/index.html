@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -15,13 +16,13 @@
         <h1 class="loginHead">Login Here !</h1>
         <div class="inp">
             <label>Enter Rollno</label><br/>           
-            <i class="fa fa-user icon"></i> <input type="number" placeholder="Roll No." required><br/><br/>
+            <i class="fa fa-user icon"></i> <input type="number" placeholder="Roll No." required id="t1"><br/><br/>
             <label>Enter Password</label><br/>
-            <i class="fa fa-lock icon"></i><input type="password" placeholder="Password" required>
+            <i class="fa fa-lock icon"></i><input type="password" placeholder="Password" required id="t2">
+            <p id="mssg"></p>
         </div>
-        <button onclick="authenticate()">Login</button>
+        <button onclick="login()">Login</button>
         <h4 class="rlink">Dont have account? <span ><a href="registration.html">Register here!</a></span></h4>
     </div>
-    <script src="auth.js"></script>
 </body>
 </html>
