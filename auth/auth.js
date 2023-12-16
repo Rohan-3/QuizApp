@@ -1,3 +1,3 @@
 const authenticate = () =>{
- location.href="../profile.html"
+ location.href="../instruction.html"
 }
