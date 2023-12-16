@@ -10,6 +10,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 150px;
+    border-bottom: 1px solid;
 }
 .logoDiv{
     width: 400px;
@@ -18,16 +19,35 @@ body {
     width: 240px;
     height: 200x;
     position: relative;
-    top: 0%;
+    bottom: 2%;
 }
-  
+  .head{
+    display: flex;
+    justify-content: space-around;
+    width: 73%;
+  }
+
+  .support{
+    position: relative;
+    left: 10%;
+    background-color: #023f80;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+  }
+  .support:hover{
+    background-color: #0d58a7;
+
+  }
   .main {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
     width: 50%;
     position: absolute;
-    top: 30%;
+    top: 27%;
     left: 20%;
   }
   
@@ -42,13 +62,14 @@ body {
   }
   
   #time {
-    color: #999;
+    color: #00f339;
     font-size: 16px;
   }
   
-  hr {
-    margin: 15px 0;
-  }
+ .qhead{
+  position: relative;
+  left: 21%;
+ }
   
   #q {
     font-size: 20px;
@@ -95,9 +116,11 @@ body {
     padding: 13px;
     color: white;
   }
-  
+  .b1:hover {
+    background-color: #065ab4;
+  }
   .b2:hover {
-    background-color: #0069d9;
+    background-color: #065ab4;
   }
   .submit{
     border: none;
@@ -111,4 +134,7 @@ body {
     left: 60%;
     font-size:large;
     margin-top: 1em;
+}
+.submit:hover{
+  background-color: #034b98;
 }
