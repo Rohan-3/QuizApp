@@ -13,10 +13,16 @@ body
     padding: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 2px solid #142d4c;
-    width: 700px;
-    height: 700px;
+    width: 1000px;
+    height: 650px;
 }
-.update,.result
+.update
+{
+    display: flex;
+    column-gap: 20px;
+    margin-top: 20px;
+}
+.result
 {
     display: none;
     margin-top: 20px;
@@ -38,17 +44,16 @@ body
     padding: 5px;
     font-size: 20px;
 }
-.homebtn
+.logoimg
 {
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     box-shadow: 0 0 3px #142d4c;
     border-radius: 18px;
     padding: 2px;
 }
 .home button
 {
-    float: right;
     background-color: #385170;
     color: white;
     padding: 10px;
@@ -70,16 +75,6 @@ button:active,img:active
 {
     box-shadow: none;
 }
-.logoimg
-{
-    width: 700px;
-    height: 500px;
-    padding: 20px;
-}
-.logo
-{
-    display: block;
-}
 .addqt,.removeqt,.updateqt,.searchqt
 {
     display: none;
@@ -88,4 +83,29 @@ button:active,img:active
 {
     font-size: 5px;
     margin-top: 5px;
+}
+.heading
+{
+    display: flex;
+}
+.logo
+{
+    flex: 1;
+    margin-top: 20px;
+}
+.admin
+{
+    margin-right: 350px;
+}
+.subupdate
+{
+    display: flex;
+    column-gap: 20px;
+}
+.home
+{
+    display: flex;
+    column-gap: 10px;
+    height: max-content;
+    margin-right: 10px;
 }
