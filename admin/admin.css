@@ -1,5 +1,10 @@
 body
 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 50px;
     font-family: 'Times New Roman', Times, serif;
     color: #113f67;
 }
@@ -7,6 +12,9 @@ body
 {
     padding: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #142d4c;
+    width: 1000px;
+    height: 650px;
 }
 .update
 {
