@@ -2,17 +2,35 @@
     <head>
         <title>online exam</title>
         <link rel="stylesheet" href="exam.css">
-        <script src="exam.js"></script>
     </head>
     <body>
         <div class="nav">
             <img  class="logo"src="../images/logo2.png">
             <div class="head">
             <h2 class="" >Quiz App Examination</h2>
-            <button class="support" >Technical support</button>
+            <button class="support" onclick="openModel()" >Technical support</button>
+            <div id="model" class="model">
+                <div class="">
+                    <div class="model-header">
+                        <h4>Send us the Query</h4> 
+                        <button id="close-model" class="close" onclick="closeModel()">&times;</button>
+                    </div>
+                    <div>
+                        <label>Roll no.</label>
+                        <input id="rollno" type="number"><br/>
+                        <label>Subject</label>
+                        <input id="subject" type="text" id="query">  
+                        <label>Queries</label>
+                        <input id="query" type="text" id="query">  
+                        <br><br>
+
+                        <button class="submit-model" onclick="submitQuery()">Submit</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        ;'sd,fl;sdm fsdfsdfsdf'
-        </div>
+    </div>
+
         <div class="main">
             <div class="e1">
                 <h1 id="d1">Questions</h1>
@@ -31,7 +49,11 @@
             <button  class="b1">Back</button>
             <button  class="b2">Next</button>
         </div>
-        <button class="submit">Submit</button>
+        <a href="certificate.html"><button class="submit">Submit</button></a>
+        <script src="exam.js"></script>
+        <script src="certificate.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
     </body>
 </html>
 

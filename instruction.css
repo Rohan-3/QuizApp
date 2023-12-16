@@ -6,14 +6,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
 }
 .nav{
     display: flex;
     align-items: center;
 }
 .logoDiv{
-    width: 400px;
+    width: 300px;
 }
 .logo{
     width: 240px;
@@ -29,7 +28,16 @@ h1{
     position: absolute;
     right: 45%;
 }
-
+.support{
+position: absolute;
+right: 10%;
+background-color: #023f80;
+color: rgb(255, 255, 255);
+height: 50px;
+padding: 15px;
+border: none;
+border-radius: 5px;
+}
 
 .instructions {
     padding: 20px;
