@@ -14,7 +14,7 @@
             <div class="subupdate">
                 <div class="update" id="update">
                     <div class="qoptions">
-                        <button onclick="adddiv()">Add Question</button><br>
+                        <button onclick="adddiv()" class="btn">Add Question</button><br>
                         <div class="addqt" id="addqt">
                             <input type="text" placeholder="Question Number" id="aqno">
                             <input type="text" placeholder="Question" id="aqt">
@@ -25,12 +25,12 @@
                             <input type="text" placeholder="correct answer" id="acans">
                             <button class="fun" onclick="add()">add</button>
                         </div>
-                        <button onclick="removediv()">remove Question</button><br>
+                        <button onclick="removediv()" class="btn">remove Question</button><br>
                         <div class="removeqt" id="removeqt">
                             <input type="text" placeholder="Question Number" id="rqno">
                             <button class="fun" onclick="remove()">remove</button>
                         </div>
-                        <button onclick="updatediv()">Update Question</button><br>
+                        <button onclick="updatediv()" class="btn">Update Question</button><br>
                         <div class="updateqt" id="updateqt">
                             <input type="text" placeholder="Question Number" id="uqno">
                             <input type="text" placeholder="Question" id="uqt">
@@ -41,7 +41,7 @@
                             <input type="text" placeholder="correct answer" id="ucans">
                             <button class="fun" onclick="update()">update</button>
                         </div>
-                        <button onclick="searchdiv()">Search Question</button>
+                        <button onclick="searchdiv()" class="btn">Search Question</button>
                         <div class="searchqt" id="searchqt">
                             <input type="text" placeholder="Question Number" id="sqno">
                             <button class="fun" onclick="search()">search</button>
@@ -60,7 +60,10 @@
                 </div>
                 <div class="result" id="result">
                     <div class="csearch">
-                        <input type="search" placeholder="candidate id">
+                        <input type="search" placeholder="candidate id" class="searchbar">
+                        <div class="names">
+                            
+                        </div>
                     </div>
                     <div class="cdisplay">
                         <h1>candidate</h1>
