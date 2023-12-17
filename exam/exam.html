@@ -2,8 +2,9 @@
     <head>
         <title>online exam</title>
         <link rel="stylesheet" href="exam.css">
+        <script src="examQuestions.js"></script>
     </head>
-    <body>
+    <body onload="load()">
         <div class="nav">
             <img  class="logo"src="../images/logo2.png">
             <div class="head">
@@ -37,7 +38,8 @@
                 <h3 id="time">time</h3>
             </div>
             <hr>
-            <h2 id="q">Q1 What is the difference between hardware and software?</h2>
+            <h2 class="qno" id="qno">Q1</h2>
+            <h2 class="q" id="q">What is the difference between hardware and software?</h2>
             <input type="radio" name="option">
             <label id="op1">Option 1: Hardware is tangible, software is intangible.</label><br>
             <input type="radio" name="option">
@@ -46,8 +48,8 @@
             <label id="op3">Option 3: Hardware is responsible for calculations, software is responsible for storag</label><br>
             <input type="radio" name="option">
             <label id="op4">Option 4: Hardware is the physical components, software is the set of instructions that run on them</label><br>
-            <button  class="b1">Back</button>
-            <button  class="b2">Next</button>
+            <button  class="b1" id="backbtn" onclick="handleback()">Back</button>
+            <button  class="b2" id="nextbtn" onclick="handleNext()">Next</button>
         </div>
         <a href="certificate.html"><button class="submit">Submit</button></a>
         <script src="exam.js"></script>

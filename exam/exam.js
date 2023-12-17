@@ -1,5 +1,5 @@
 
- function openModel(){
+function openModel(){
     document.getElementById("model").style.display = "inline-block";
 }
 
