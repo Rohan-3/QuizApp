@@ -1,4 +1,5 @@
 let flag;
+let pic;
 const show_Img=()=>
 {
     const reader = new FileReader();
@@ -10,7 +11,7 @@ const show_Img=()=>
 
 const pssd=()=>
 {
-    let pssd1 = document.getElementById("t3").value ;
+    let pssd1 = document.getElementById("t3").value;
     let pssd2 = document.getElementById("t4").value;
     if(pssd1!==pssd2)
     {

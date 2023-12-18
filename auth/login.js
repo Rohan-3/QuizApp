@@ -1,3 +1,21 @@
+
+let adminId = document.getElementById("adminId").style.display = "none"
+
+const contToggle = () =>{
+    let adminId = document.getElementById("adminId").style.display = "none"
+    let rollInp = document.getElementById("contRollno").style.display = "inline-block"
+
+
+}
+
+const adminToggle = () =>{
+    let rollInp = document.getElementById("contRollno").style.display = "none"
+    let adminId = document.getElementById("adminId").style.display = "inline-block"
+
+
+}
+
+
 const login=()=>
 {
     let id= document.getElementById("t1").value ;
