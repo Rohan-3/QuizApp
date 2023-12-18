@@ -41,7 +41,7 @@ const displayQuestions=()=>
     document.getElementById("op3").innerHTML=question.op3;
     document.getElementById("op4").innerHTML=question.op4;
 }
-const load=()=>
+const firstqes=()=>
 {
   displayQuestions();
   c++;

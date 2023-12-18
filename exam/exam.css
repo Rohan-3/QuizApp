@@ -95,6 +95,15 @@ body {
     font-weight: bold;
     margin-bottom: 10px;
   }
+  .qes
+  {
+    display: flex;
+    margin: 10px;
+  }
+  .q
+  {
+    margin-left: 8px;
+  }
   .model{
     position: absolute;
     top: 25%;

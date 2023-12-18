@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="exam.css">
         <script src="examQuestions.js"></script>
     </head>
-    <body onload="display_image(); load()">
+    <body onload="firstqes(); display_image();">
         <div class="nav">
             <img  class="logo"src="../images/logo2.png">
             <img src="images\person.jpg" class="profile" id="profile">
@@ -37,8 +37,10 @@
                 <h3 id="time">time</h3>
             </div>
             <hr>
-            <h2 class="qno" id="qno">Q1</h2>
-            <h2 class="q" id="q">What is the difference between hardware and software?</h2>
+            <div class="qes">
+                <h3 class="qno" id="qno">Q1</h3>
+                <h2 class="q" id="q">What is the difference between hardware and software?</h2>
+            </div>
             <input type="radio" name="option">
             <label id="op1">Option 1: Hardware is tangible, software is intangible.</label><br>
             <input type="radio" name="option">

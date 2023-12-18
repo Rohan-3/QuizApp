@@ -1,4 +1,6 @@
-let flag;
+//let students=[];
+//students=JSON.parse(localStorage.getItem("s"))||[];
+let flag=true;
 let pic;
 const show_Img=()=>
 {
@@ -33,14 +35,13 @@ const signup=()=>
         let k = JSON.parse(localStorage.getItem("s"));
         let students =[];
         let name = document.getElementById("t1").value;
-        let roll = document.getElementById("t2").value;
+        let roll = students.length > 0 ? students[students.length - 1].roll + 1 : 1;
         let pssd = document.getElementById("t3").value;
         let image= document.getElementById("pic").src;
         let user= {name,roll,pssd,image};
         if(k==null)
         {
             students=[...students,user];
-           
         }
         else
         {
@@ -48,8 +49,8 @@ const signup=()=>
             students=[...students,user];
         }
         localStorage.setItem("s",JSON.stringify(students));
-        alert("Registered successfully");
-
+        alert(`Registered successfully and your roll no is ${roll}`);
+        
        }
     else
     {

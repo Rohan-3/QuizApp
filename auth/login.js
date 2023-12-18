@@ -2,9 +2,9 @@
 let adminId = document.getElementById("adminId").style.display = "none"
 
 const contToggle = () =>{
+    flag=true;
     let adminId = document.getElementById("adminId").style.display = "none"
     let rollInp = document.getElementById("contRollno").style.display = "inline-block"
-
 
 }
 
@@ -12,17 +12,16 @@ const adminToggle = () =>{
     let rollInp = document.getElementById("contRollno").style.display = "none"
     let adminId = document.getElementById("adminId").style.display = "inline-block"
 
-
 }
 
 
-const login=()=>
+const contlogin=()=>
 {
-    let id= document.getElementById("t1").value ;
-    let pssd= document.getElementById("t2").value ;
     let k= JSON.parse(localStorage.getItem("s"));
+    let id=document.getElementById("t1").value;
+    let pssd=document.getElementById("t2").value;
     let data = k.filter((temp)=>{
-        if(temp.roll === id)
+        if(temp.roll == id)
         {
             return temp;
         }
@@ -48,3 +47,30 @@ const login=()=>
         document.getElementById("t2").value="";
     }
 }
+
+
+const adminlogin=()=>
+{
+    if(document.getElementById("a1").value==123 && document.getElementById("a2").value==="admin123")
+    {
+        location.href="../admin/admin.html"
+    }
+    else
+    {
+        document.getElementById("mssg").innerHTML="invalid admin id or password"
+    }
+}
+
+const login=()=>
+{
+    if (document.getElementById("contRollno").style.display = "inline-block")
+    {
+        contlogin();
+    }
+    if(document.getElementById("adminId").style.display = "inline-block")
+    {
+        adminlogin();
+    }
+}
+
+
