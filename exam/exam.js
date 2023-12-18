@@ -7,6 +7,12 @@ function closeModel () {
     document.getElementById("model").style.display = "none";    
 }
 
+const display_image=()=>
+{
+    let data = JSON.parse(sessionStorage.getItem("info"));
+    document.getElementById("profile").src = data.image;
+}
+
 function submitQuery(){
 
    let rollno = document.getElementById("rollno").value;

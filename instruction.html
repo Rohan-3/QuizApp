@@ -5,16 +5,19 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">    
 <title>Exam Instructions</title>
     <link rel="stylesheet" href="instruction.css">
+    <script src="instruction.js"></script>
 </head>
-<body>
+<body onload="display_image()">
     <div>
         <div class="nav">
-            <img  class="logo"src="../images/logo2.png">
+            <img  class="logo"src="images\logo2.png">
+            <img src="images\person.jpg" class="profile" id="profile">
             <h1>Exam Instructions</h1>  
             <button class="support" >Technical support</button>
         </div>
     </div>
     <hr>
+
     <div class="box">
         <div class="instructions">
             <h3>Please carefully read and follow all the instructions before starting the exam.</h3>
@@ -62,7 +65,5 @@
             </div>
         
     </div>
-    
-    <script src="/exam/exam.js"></script>
 </body>
 </html>

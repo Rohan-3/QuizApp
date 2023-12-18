@@ -31,6 +31,7 @@ const login=()=>
     {
         if(pssd === data[0].pssd)
         {
+            sessionStorage.setItem("info",JSON.stringify(data[0]))
             location.href="../instruction.html";
         }
         else
