@@ -12,7 +12,6 @@ function submitQuery(){
    let rollno = document.getElementById("rollno").value;
    let subject = document.getElementById("subject").value
    let query = document.getElementById("query").value
-
     
    console.log(rollno, query);
 
@@ -23,5 +22,5 @@ function submitQuery(){
     Subject : `${subject} ,  my Rollno: ${rollno}`,
     Body : ` Rollno: ${rollno},  ${query}`
 }).then(
-  message => alert(message)
+  message => alert(`${message} "Techical team will reach within 30 seconds`)
 );}
