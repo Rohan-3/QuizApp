@@ -47,3 +47,14 @@ const firstqes=()=>
   c++;
   document.getElementById("backbtn").disabled=true;
 }
+
+// const store=()=>
+// {
+//   let data = JSON.parse(sessionStorage.getItem("info"));
+//   let roll= data.roll;
+//   let name = data.name;
+//   let x = document.getElementById("qno").value; 
+//   let y = document.querySelector('input[name="option"]:checked').value;
+//   let res = {roll,name,[x]:y};
+//   localStorage.setItem("result",JSON.stringify(res));
+// }

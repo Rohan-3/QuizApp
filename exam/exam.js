@@ -1,3 +1,6 @@
+// let count1=10;
+// let count2=0;
+// let t;
 
 function openModel(){
     document.getElementById("model").style.display = "inline-block";
@@ -30,3 +33,26 @@ function submitQuery(){
 }).then(
   message => alert(`${message} "Techical team will reach within 30 seconds`)
 );}
+
+
+// const duration=()=>
+// {
+//     if(count1>0)
+//     {
+//         count1--;
+//     }
+//     else if(count2>0)
+//     {
+//         count2--;
+//         count1=59;
+//     }
+//      else
+//     {
+//        alert("Time Up");
+//        clearInterval(t);
+//        location.href="result.html";
+//     }
+//     document.getElementById("time").innerHTML=`0${count2}:${count1} (time remaining)`;
+// }
+
+// t=setInterval(duration,1000);

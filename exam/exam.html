@@ -4,10 +4,10 @@
         <link rel="stylesheet" href="exam.css">
         <script src="examQuestions.js"></script>
     </head>
-    <body onload="firstqes(); display_image();">
+    <body onload=" firstqes();display_image()">
         <div class="nav">
             <img  class="logo"src="../images/logo2.png">
-            <img src="images\person.jpg" class="profile" id="profile">
+            <img src= "../images/person.jpg" class="profile" id="profile">
             <div class="head">
             <h2 class="" >Quiz App Examination</h2>
             <button class="support" onclick="openModel()" >Technical support</button>
@@ -34,20 +34,20 @@
         <div class="main">
             <div class="e1">
                 <h1 id="d1">Questions</h1>
-                <h3 id="time">time</h3>
+                <h3 id="time"></h3>
             </div>
             <hr>
-            <div class="qes">
+            <div class="qes" onload="firstqes()">
                 <h3 class="qno" id="qno">Q1</h3>
                 <h2 class="q" id="q">What is the difference between hardware and software?</h2>
             </div>
-            <input type="radio" name="option">
+            <input type="radio" name="option" value="a" onchange="store()">
             <label id="op1">Option 1: Hardware is tangible, software is intangible.</label><br>
-            <input type="radio" name="option">
+            <input type="radio" name="option" value="b" onchange="store()">
             <label id="op2">Option 2: Hardware is used for input, software is used for output.</label><br>
-            <input type="radio" name="option">
+            <input type="radio" name="option" value="c" onchange="store()">
             <label id="op3">Option 3: Hardware is responsible for calculations, software is responsible for storag</label><br>
-            <input type="radio" name="option">
+            <input type="radio" name="option" value="d" onchange="store()">
             <label id="op4">Option 4: Hardware is the physical components, software is the set of instructions that run on them</label><br>
             <button  class="b1" id="backbtn" onclick="handleback()">Back</button>
             <button  class="b2" id="nextbtn" onclick="handleNext()">Next</button>
