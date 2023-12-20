@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="exam.css">
         <script src="examQuestions.js"></script>
     </head>
-    <body onload=" firstqes();display_image()">
+    <body onload="display_image();firstqes()">
         <div class="nav">
             <img  class="logo"src="../images/logo2.png">
             <img src= "../images/person.jpg" class="profile" id="profile">
@@ -52,7 +52,7 @@
             <button  class="b1" id="backbtn" onclick="handleback()">Back</button>
             <button  class="b2" id="nextbtn" onclick="handleNext()">Next</button>
         </div>
-        <a href="certificate.html"><button class="submit">Submit</button></a>
+        <button class="submit" onclick="submit()">Submit</button></a>
         <script src="exam.js"></script>
         <script src="certificate.js"></script>
         <script src="https://smtpjs.com/v3/smtp.js">

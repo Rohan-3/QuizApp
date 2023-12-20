@@ -1,6 +1,8 @@
-// let count1=10;
-// let count2=0;
-// let t;
+let count1=10;
+let count2=0;
+let t;
+let m = JSON.parse(localStorage.getItem("allresult"));
+let result1=[];
 
 function openModel(){
     document.getElementById("model").style.display = "inline-block";
@@ -35,24 +37,35 @@ function submitQuery(){
 );}
 
 
-// const duration=()=>
-// {
-//     if(count1>0)
-//     {
-//         count1--;
-//     }
-//     else if(count2>0)
-//     {
-//         count2--;
-//         count1=59;
-//     }
-//      else
-//     {
-//        alert("Time Up");
-//        clearInterval(t);
-//        location.href="result.html";
-//     }
-//     document.getElementById("time").innerHTML=`0${count2}:${count1} (time remaining)`;
-// }
+const duration=()=>
+{
+    if(count1>0)
+    {
+        count1--;
+    }
+    else if(count2>0)
+    {
+        count2--;
+        count1=59;
+    }
+     else
+    {
+       alert("Time Up");
+       clearInterval(t);
+       let details = JSON.parse(localStorage.getItem("result"));
+      if(m!==null)
+      {
+         result1 = m;
+         result1=[...result1,details];
+      }
+      else
+       {
+          result1=[...result1,details];
+        }
+       localStorage.setItem("allresult",JSON.stringify(result1));
+       location.href="result.html";
+    }
+    document.getElementById("time").innerHTML=`0${count2}:${count1} (time remaining)`;
+}
 
-// t=setInterval(duration,1000);
+t=setInterval(duration,1000);

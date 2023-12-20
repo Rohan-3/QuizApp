@@ -1,6 +1,9 @@
 let questions=[];
 questions=JSON.parse(localStorage.getItem("question"))||[];
+let k = JSON.parse(localStorage.getItem("allresult"));
+let result=[];
 let c=0;
+let answer={};
 const handleNext=()=>
 {
   if(c==questions.length-1)
@@ -15,6 +18,7 @@ const handleNext=()=>
     displayQuestions()
     c++;
   }
+  search();
 }
 const handleback=()=>
 {
@@ -30,6 +34,7 @@ const handleback=()=>
     displayQuestions();
     document.getElementById("nextbtn").disabled=false;
   }
+  search();
 }
 const displayQuestions=()=>
 {
@@ -48,13 +53,53 @@ const firstqes=()=>
   document.getElementById("backbtn").disabled=true;
 }
 
-// const store=()=>
-// {
-//   let data = JSON.parse(sessionStorage.getItem("info"));
-//   let roll= data.roll;
-//   let name = data.name;
-//   let x = document.getElementById("qno").value; 
-//   let y = document.querySelector('input[name="option"]:checked').value;
-//   let res = {roll,name,[x]:y};
-//   localStorage.setItem("result",JSON.stringify(res));
-// }
+const store=()=>
+{
+  let data = JSON.parse(sessionStorage.getItem("info"));
+  let roll= data.roll;
+  let name = data.name;
+  let x = document.getElementById("qno").innerHTML; 
+  let y = document.querySelector('input[name="option"]:checked').value;
+   answer={...answer,[x]:y};
+  let res = {roll,name,ans:answer};
+  localStorage.setItem("result",JSON.stringify(res));
+}
+
+const search=()=>
+  {
+    let x= document.getElementById("qno").innerText ;
+    let data1= undefined;
+    let data=JSON.parse(localStorage.getItem("result"));
+     data1 = data.ans[x];
+    if(data1!==undefined)
+   {
+      let radio = document.querySelectorAll('[name="option"]');
+      radio.forEach((temp)=>{
+         if(temp.value===data1)
+         {
+            temp.checked=true;
+         }
+      })
+   } 
+   else{
+      let radio = document.querySelector('input[name="option"]:checked');
+      radio.checked=false;
+   }
+ }
+
+ const submit=()=>
+ {
+    alert("Do you want to submit?");
+    let details = JSON.parse(localStorage.getItem("result"));
+    if(k!==null)
+    {
+       result = k;
+      result=[...result,details];
+    }
+    else
+    {
+      result=[...result,details];
+    }
+    localStorage.setItem("allresult",JSON.stringify(result));
+    location.href="result.html";
+ }
