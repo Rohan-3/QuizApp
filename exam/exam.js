@@ -1,5 +1,5 @@
-let count1=10;
-let count2=0;
+let count1=1;
+let count2=2;
 let t;
 let m = JSON.parse(localStorage.getItem("allresult"));
 let result1=[];
