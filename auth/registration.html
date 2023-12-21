@@ -10,20 +10,20 @@
 </head>
 <body>
     <div class="nav" >
-        <form action="index.html">
+        <form id="reg" >
         <img  class="logo"src="../images/logo2.png">
     </div>
         <div class="total">
         <diV class="details">
         <h1 class="regiterHead">Register Here !</h1>
         <label>Enter Name</label>
-        <p><i class="fa fa-user icon"></i><input type="text"  class="txt" placeholder="Name" required id="t1"></p>
+        <p><i class="fa fa-user icon"></i><input type="text"  class="txt" placeholder="Name" required id="name"></p>
         <!-- <label>Enter Rollno</label>
         <p><i class="fa fa-id-card icon"></i><input type="number"  placeholder="Roll no" class="txt" required id="t2"></p> -->
         <label>Enter Password</label>
-        <p><i class="fa fa-lock icon"></i><input type="password" placeholder="Password" required class="txt" id="t3"></p>
+        <p><i class="fa fa-lock icon"></i><input type="password" placeholder="Password" required class="txt" id="password"></p>
         <label>Confirm Password</label>
-        <p><i class="fa fa-lock icon"></i><input type="password" placeholder="Confirm password" required class="txt" id="t4" onkeyup="pssd()"></p>
+        <p><i class="fa fa-lock icon"></i><input type="password" placeholder="Confirm password" required class="txt" id="re_password" onkeyup="pssd()"></p>
         <p id="mssg"></p>
         <p><button class="btn" onclick="signup()">SIGNUP </button></p>
         <h4 class="rlink">Already have account? <span ><a href="index.html">Login here!</a></span></h4>
