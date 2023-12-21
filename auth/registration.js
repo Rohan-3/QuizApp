@@ -13,8 +13,8 @@ const show_Img=()=>
 
 const pssd=()=>
 {
-    let pssd1 = document.getElementById("t3").value;
-    let pssd2 = document.getElementById("t4").value;
+    let pssd1 = document.getElementById("password").value;
+    let pssd2 = document.getElementById("re_password").value;
     if(pssd1!==pssd2)
     {
         document.getElementById("mssg").innerHTML="Password dosen't match";
