@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <link rel="stylesheet" href="admin.css">
         <script src="admin.js"></script>
@@ -9,6 +10,7 @@
             <div class="heading">
                 <div class="logo"><img src="../images/logo2.png" class="logoimg"></div>
                 <div class="admin"><h1>ADMIN DASHBOARD</h1></div>
+                <div class="homebtn"><a href="../auth/index.html"><img src="../images/homebutton.png" class="homeimg"></a></div>
             </div>
             <hr>
             <div class="subupdate">
@@ -45,17 +47,21 @@
                         <div class="searchqt" id="searchqt">
                             <input type="text" placeholder="Question Number" id="sqno">
                             <button class="fun" onclick="search()">search</button>
-                        </div>
+                        </div><br>
+                        <button class="btn" onclick="displayqes(); allqes();">All Question</button>
                     </div>
-                    <div class="qdisplay">
-                        <h2>Question number:<span id="qno"></span></h2>
-                        <h4>Question:<span id="qt"></span></h4>
-                        <h4>option 1:<span id="op1"></span></h4>
-                        <h4>option 2:<span id="op2"></span></h4>
-                        <h4>option 3:<span id="op3"></span></h4>
-                        <h4>option 4:<span id="op4"></span></h4>
-                        <h4>correct answer:<span id="cans"></span></h4>
-                        <h2 id="output"></h2>
+                    <div>
+                        <div class="qdisplay" id="qdisplay">
+                            <h2>Question number:<span id="qno"></span></h2>
+                            <h4>Question:<span id="qt"></span></h4>
+                            <h4>option 1:<span id="op1"></span></h4>
+                            <h4>option 2:<span id="op2"></span></h4>
+                            <h4>option 3:<span id="op3"></span></h4>
+                            <h4>option 4:<span id="op4"></span></h4>
+                            <h4>correct answer:<span id="cans"></span></h4>
+                            <h2 id="output"></h2>
+                        </div>
+                        <div class="displayqes" id="displayqes">Question</div>
                     </div>
                 </div>
                 <div class="result" id="result">

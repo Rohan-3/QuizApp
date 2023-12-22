@@ -98,3 +98,22 @@ const search=()=>
         document.getElementById("output").innerHTML="invalid question number";
     }
 }
+const displayqes=()=>
+{
+    document.getElementById("qdisplay").style.display="none";
+    document.getElementById("displayqes").style.display="inline-block";
+    let disqes="";
+    questions.forEach((question,i)=>
+    {
+        disqes += `
+        <h2>Question number : ${question.qno}</h2>
+        <h4>Question : ${question.qt}</h4>
+        <h4>Option 1 : ${question.op1}</h4>
+        <h4>Option 2 : ${question.op2}</h4>
+        <h4>Option 3 : ${question.op3}</h4>
+        <h4>Option 4 : ${question.op4}</h4>
+        <h4>correct Answer : ${question.cans}</h4>
+        <hr>`
+    });
+    document.getElementById("displayqes").innerHTML = disqes;
+}

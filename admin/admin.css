@@ -4,12 +4,14 @@ body
     place-items: center;
     font-family: 'Times New Roman', Times, serif;
     color: #113f67;
+    height: 100vh;
+    margin: 0;
 }
 .main
 {
     padding: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 2px solid #142d4c;
+    border: 2px solid #27296d;
     width: 1000px;
     height: 700px;
 }
@@ -26,7 +28,7 @@ body
 }
 .qoptions,.qdisplay,.csearch,.cdisplay
 {
-    border: 1px solid black;
+    border: 2px solid #27296d;
     padding: 20px;
     width: 350px;
     height: 500px;
@@ -72,7 +74,7 @@ button:active
 {
     box-shadow: none;
 }
-.addqt,.removeqt,.updateqt,.searchqt
+.addqt,.removeqt,.updateqt,.searchqt,.displayqes
 {
     display: none;
 }
@@ -95,7 +97,7 @@ button:active
 }
 .admin
 {
-    margin-right: 350px;
+    margin-right: 260px;
 }
 .subupdate
 {
@@ -124,4 +126,34 @@ button:active
 .searchbar
 {
     position: fixed;
+}
+.homeimg
+{
+    margin-top: 45px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    box-shadow: 0 0 3px #142d4c;
+    border-radius: 45px;
+}
+.homeimg:active
+{
+    box-shadow: none;
+}
+hr
+{
+    border-top: 1px solid #27296d;
+}
+.displayqes
+{
+    border: 2px solid #27296d;
+    padding: 20px;
+    width: 350px;
+    height: 500px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.displayqes::-webkit-scrollbar
+{
+    display: none;
 }
