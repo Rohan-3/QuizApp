@@ -59,3 +59,8 @@ button{
 
 .cans {
     color: green;}
+
+.disp
+{
+    display: flex;
+}
