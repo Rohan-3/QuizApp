@@ -32,3 +32,30 @@ button{
     font-size:large;
     margin-top: 1em;
 }
+
+/* Result question display */
+.box{
+    display: flex;
+    justify-content: space-evenly;
+}
+.resultSection{
+    display: flex;
+    justify-content: space-around;
+}
+.resultHead{
+    position: relative;
+    left: 45%;
+}
+
+
+.extQue {
+    border: 1px solid #ddd;
+    width: 400px;
+}
+
+.extQue h4 {
+    margin: 8px 0;
+}
+
+.cans {
+    color: green;}

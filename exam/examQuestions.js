@@ -4,6 +4,7 @@ let k = JSON.parse(localStorage.getItem("allresult"));
 let result=[];
 let c=0;
 let answer={};
+let res;
 const handleNext=()=>
 {
   if(c==questions.length-1)
@@ -61,7 +62,7 @@ const store=()=>
   let x = document.getElementById("qno").innerHTML; 
   let y = document.querySelector('input[name="option"]:checked').value;
    answer={...answer,[x]:y};
-  let res = {roll,name,ans:answer};
+   res = {roll,name,ans:answer};
   localStorage.setItem("result",JSON.stringify(res));
 }
 
@@ -102,4 +103,6 @@ const search=()=>
     }
     localStorage.setItem("allresult",JSON.stringify(result));
     location.href="result.html";
+    
  }
+ 
