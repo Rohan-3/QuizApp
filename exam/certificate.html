@@ -1,3 +1,11 @@
+<!-- CERTIFICAte HTML -->
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,18 +18,42 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
-<body>
+<body onload="certificateData()">
+    <div class="wholePage">
+    <div>
     <div id="certificate">
         <img src="../images/Certificate.png">
     <div  class="certificate"><br/><br/><br/><br/><br/><br/>
-        <h1 class="name">Sruti</h1>
-        <pre class="para">for completing the Quiz with <span id="marks" class="marks"> <b>8</b> </span> Marks out of 10 and secured <span id="grade" class="grade">
-<b>A+</b></span> Grade we congratulate and wish all the best for his/her  
-all the future Acheivements.</pre>     
+        <h1 class="name" id="name"></h1><pre class="para">
+    for completing the Quiz with <span class="marks"> <b id="marks" ></b></span> Marks out of <b id="qnos" ></b> </span>
+    and secured Grade <b id="grade"></b> we congratulate and 
+    wish all the best for his/her all the future Acheivements.</pre>     
 </div>
 </div>
     <div>
-        <button onclick="download()">Download Certificate</button>
+        
     </div>
+</div>
+<div class="container">
+    <div class="endText">
+      <h1>Congratulations! You've earned your certificate!</h1>
+  
+      <div class="intro-text">
+        <p>We're thrilled to have you here on the certificate download page, fresh off your amazing performance in our online exam! Take a moment to breathe in that accomplishment – you've put in the hard work, faced the challenge, and conquered it!</p>
+      </div>
+  
+      <div class="achievement-text">
+        <p>This certificate is a testament to your dedication, knowledge, and perseverance. It's a symbol of your commitment to learning and your ability to apply that knowledge under pressure. We're incredibly proud of what you've achieved, and we know you'll continue to do great things.</p>
+      </div>
+  
+      <div class="download-prompt">
+        <p>Downloading your certificate is easy! <b>Just click on Download Certificate </b></p>
+        <button class="certiBtn" onclick="download()">Download Certificate</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="result.js"></script>
 </body>
 </html>

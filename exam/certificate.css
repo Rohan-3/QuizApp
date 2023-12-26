@@ -1,9 +1,21 @@
+/* Certificate CSS  */
+
 *{
     font-family: "Times New Roman", Times, serif;
+}
+body{
+    margin: 10px;
+    background-color:#10385a;
 }
 img{
     height: 75vh;
     width: 60vh;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+.wholePage{
+    display: flex;
+    justify-content: space-between;
 }
 .certificate{
     position: absolute;
@@ -13,7 +25,7 @@ img{
 .name{
     font-size:2em;
     position: relative;
-    left: 2.5em;
+    left: 2em;
 }
 .para{
     font-size: 1em;
@@ -32,8 +44,71 @@ button{
     font-size:large;
     margin-top: 1em;
 }
+.certiBtn{
+    border: none;
+    border-radius: 5px;
+    padding: 13px;
+    color: white;
+    background-color: #10385a;
+    width: 15em;
+    font-size: 2em;
+    text-transform: uppercase;
+    height: 70px;
+    font-size:large;
+    margin-top: 1em;
+}
+.certiBtn:hover{
+    color: green;
+    background-color: #ffffff;
+    border: 1px solid #10385a;
+}
 
+/*  side text of Certificate */
+.container {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  /* Main text container styling */
+  .endText {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    position: relative;
+    top: 15%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styling */
+  .endText h1 {
+    font-size: 28px;
+    color: rgb(0, 208, 0);
+    margin-bottom: 20px;
+  }
+  
+  /* Paragraph styling */
+  .endText p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .intro-text p {
+    margin-bottom: 15px;
+  }
+  
+  .achievement-text p {
+    font-weight: bold; 
+  }
+  
+  .download-prompt p {
+    margin-top: 15px; 
+  }
+
+  
 /* Result question display */
+
 .box{
     display: flex;
     justify-content: space-evenly;
@@ -63,4 +138,21 @@ button{
 .disp
 {
     display: flex;
+    column-gap: 4em ;
+}
+.displayCR{
+    display: flex;
+    justify-content: space-between;
+}
+.marksDisplay{
+    font-size: x-large;
+    font-weight: 600;
+    color: #10385a;
+
+}
+.mg{
+    font-size: x-large;
+}
+.gradeDisplay{
+    color: #10385a;
 }

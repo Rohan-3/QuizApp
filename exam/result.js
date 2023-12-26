@@ -2,9 +2,11 @@
 
 const display_ques=()=>
 {
+    let aresult = JSON.parse(localStorage.getItem("allresult"));
     let data = JSON.parse(localStorage.getItem("question"));
     let result = JSON.parse(localStorage.getItem("result"));
     let marks = 0;
+    let grade="";
     data.forEach((item)=>{
       let q= item.qno;
       const para = document.createElement("p");
@@ -68,7 +70,6 @@ const display_ques=()=>
      if(a.includes(q))
      {
       let r = document.querySelectorAll('[type="radio"]');
-      console.log(r.length);
       for(let i= r.length-1;i>=r.length-4;i--)
       {
         if(result.ans[q] === r[i].value)
@@ -82,8 +83,25 @@ const display_ques=()=>
       if (data[i].cans == result.ans[i+1]) {
           marks++;
       }
-   document.getElementById("m").innerHTML=marks;
-}  
+} 
+if (marks === data.length) {
+  grade = "Grade: A+"
+}else if (marks<= data.length &&  marks>= data.length/2) {
+  grade = "Grade: B+"
+}else if (marks > 0 && marks< data.length/2) {
+  grade = "Grade: C+"
+}else{
+  grade = "Grade: D FAIL"
+  document.getElementById("certiBtn").style.display = "none";
+}
+let am = aresult[aresult.length-1];
+am ={...am,marks,grade};
+aresult[aresult.length-1]= am;
+localStorage.setItem("allresult",JSON.stringify(aresult));
+document.getElementById("m").innerHTML=marks;
+document.getElementById("totalq").innerHTML=" "+data.length;
+document.getElementById("grade").innerHTML= grade;
 }
 
->>>>>>> Stashed changes
+
+

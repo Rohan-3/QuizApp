@@ -7,11 +7,25 @@
     <script src="result.js"></script>
 </head>
 <body onload="display_ques()">
-    <h1 id="m"></h1>
-   <a href="certificate.html"> View Certificate</a>
-   <div id="result">
+    <div>
+        <h1 class="resultHead">Result</h1>
+    </div>
+    <div class="m" >Marks: <span id="m" class="mg"></span> <span class="mg">/</span><span id="totalq" class="mg"></span>
+    <span id="grade" class="gradeDisplay"></span> 
+    <div class="certificateBtn">
+        <span><a href="certificate.html"> <button id="certiBtn">View Certificate </button> </a></span></div>
+    </div>
+    
+     
+    <!-- Displaying questions -->
+    <div class="quesDisplay">
+        <h2>Check Answers : </h2>
+        <div id="result">
+        
+        </div>
+    </div>
 
-   </div>
 
+<link rel="stylesheet" href="certificate.css">
 </body>
 </html>
