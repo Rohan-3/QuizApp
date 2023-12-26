@@ -75,6 +75,10 @@ const display_ques=()=>
         {
             r[i].checked = true;
         }
+        else
+        {
+          r[i].disabled = true;
+        }
       }
      }
     })
