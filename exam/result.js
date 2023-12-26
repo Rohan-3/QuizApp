@@ -1,5 +1,3 @@
-
-
 const display_ques=()=>
 {
     let aresult = JSON.parse(localStorage.getItem("allresult"));
@@ -8,6 +6,7 @@ const display_ques=()=>
     let marks = 0;
     let grade="";
     data.forEach((item)=>{
+     let ques = document.createElement("div")
       let q= item.qno;
       const para = document.createElement("p");
       para.innerText = `${item.qno}. ${item.qt}`;
@@ -102,6 +101,3 @@ document.getElementById("m").innerHTML=marks;
 document.getElementById("totalq").innerHTML=" "+data.length;
 document.getElementById("grade").innerHTML= grade;
 }
-
-
-
