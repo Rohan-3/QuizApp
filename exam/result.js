@@ -36,6 +36,7 @@ const display_ques=()=>
       const p3 = document.createElement("p");
       const p4 = document.createElement("p");
       const p5 = document.createElement("p");
+      p5.setAttribute("id","coans");
       if(item.cans=="a")
       {
         p5.innerText= `Correct answer: ${item.op1}`;
@@ -75,7 +76,16 @@ const display_ques=()=>
       {
         if(result.ans[q] === r[i].value)
         {
+          if(item.cans === result.ans[q])
+          {
+            r[i].style.accentColor = "green";
             r[i].checked = true;
+          }
+          else
+          {
+            r[i].style.accentColor = "red";
+            r[i].checked = true;
+          }
         }
         else
         {
