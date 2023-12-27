@@ -7,7 +7,7 @@
 }
 .regiterHead{
     position: relative;
-    right: 25%;
+    right: 27%;
 }
 .nav{
     display: flex;
@@ -31,6 +31,10 @@
     color: grey;
 }
 
+.inps{
+    position: relative;
+    right: 10%;
+}
 .txt
 {
     background-color: rgb(231, 243, 254);
@@ -53,8 +57,8 @@ i {
 {
     width:150px;
     Position: absolute;
-    top:20%;
-    left:90%;
+    top:25%;
+    left:80%;
 }
 
 .total
