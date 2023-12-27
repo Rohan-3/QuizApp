@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="result.js"></script>
+   <style>
+        *
+        {
+            overflow-x: hidden;
+        }
+        .result
+        {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+        .ques
+        {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body style="background-color: rgb(251, 253, 255);" onload="display_ques()">
     <div>
@@ -20,7 +36,7 @@
     <!-- Displaying questions -->
     <div class="quesDisplay">
         <h2>Check Answers : </h2>
-        <div id="result">
+        <div id="result" class="result">
         
         </div>
     </div>

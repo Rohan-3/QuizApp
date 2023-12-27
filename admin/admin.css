@@ -163,3 +163,7 @@ hr
 {
     display: none;
 }
+.dispalynames
+{
+    cursor: pointer;
+}

@@ -6,7 +6,8 @@ const display_ques=()=>
     let marks = 0;
     let grade="";
     data.forEach((item)=>{
-     let ques = document.createElement("div")
+      let ques = document.createElement("div")
+      ques.classList.add("ques");
       let q= item.qno;
       const para = document.createElement("p");
       para.innerText = `${item.qno}. ${item.qt}`;
@@ -59,12 +60,13 @@ const display_ques=()=>
       p3.appendChild(l3);
       p4.appendChild(z);
       p4.appendChild(l4);
-      document.getElementById("result").appendChild(para);
-      document.getElementById("result").appendChild(p1);
-      document.getElementById("result").appendChild(p2);
-      document.getElementById("result").appendChild(p3);
-      document.getElementById("result").appendChild(p4);
-      document.getElementById("result").appendChild(p5);
+      ques.appendChild(para);
+      ques.appendChild(p1);
+      ques.appendChild(p2);
+      ques.appendChild(p3);
+      ques.appendChild(p4);
+      ques.appendChild(p5);
+      document.getElementById("result").appendChild(ques)
      const a = Object.keys(result.ans);
      if(a.includes(q))
      {
