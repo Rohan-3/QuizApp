@@ -5,8 +5,8 @@ html2canvas(document.getElementById("certificate")).then((canvas) =>{
     let certImage = canvas.toDataURL('image/png');
     console.log(certImage);
 
-    let pdf = new jsPDF('p', 'px', [800, 1250]);
-    pdf.addImage(certImage, 'PNG', 0,0, 800, 1265);
+    let pdf = new jsPDF('p', 'px', [1100, 1350]);
+    pdf.addImage(certImage, 'PNG', 0,0, 1100, 1365);
     pdf.save('Certificate.pdf');
 })
 

@@ -1,5 +1,6 @@
 *{
     font-family: "Times New Roman", Times, serif;
+    overflow: hidden;
     background-color: white;
 }
 
@@ -10,6 +11,7 @@ body {
 .nav{
     display: flex;
     align-items: center;
+    margin-top: 1%;
 }
 .logoDiv{
     width: 300px;
@@ -23,11 +25,12 @@ body {
 .box{
     display: flex;
     position: relative;
+    top: 20px;
     left: 3%;
     justify-content: center;
     text-align: start;
     
-    height: 70%;
+    height: 80%;
 }
 h1{
     position: absolute;
@@ -52,7 +55,10 @@ border-radius: 5px;
     height: 70%;
 }
 .addDetails{
-    width: 100%;
+    position: relative;
+    top: 13px;
+    width: 120%;
+    height: 80vh;
 }
 h3{
     position: relative;
@@ -98,7 +104,7 @@ button:hover {
     height:100px; 
     position: relative;
     border: 1px solid;
-    margin-left: 3%;
+    margin-left: 5%;
     border-radius: 50px;
 }
 
@@ -120,4 +126,15 @@ button:hover {
     background-size: cover;
     opacity: 0.3; 
     filter:alpha(opacity=10);
+  }
+
+  .logoImg{
+    position: absolute;
+    right: 13%;
+    
+  }
+
+  img{
+    width: 600px;
+    height: 400px;
   }

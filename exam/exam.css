@@ -217,6 +217,7 @@ body {
 /* Water Marks */
 .watermark{
   position: relative;
+  width: 30%;
   left: 30%;
   top: 20%;
   

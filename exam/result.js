@@ -3,6 +3,7 @@ const display_ques=()=>
     let aresult = JSON.parse(localStorage.getItem("allresult"));
     let data = JSON.parse(localStorage.getItem("question"));
     let result = JSON.parse(localStorage.getItem("result"));
+    let students = JSON.parse(localStorage.getItem("s"));
     let marks = 0;
     let grade="";
     data.forEach((item)=>{
@@ -98,13 +99,24 @@ const display_ques=()=>
       if (data[i].cans == result.ans[i+1]) {
           marks++;
       }
+
+      let sImg = students.filter((temp) => temp.roll == result.roll)
+
+      document.getElementById("pic").src = sImg[0].image;
+
+
 } 
 if (marks === data.length) {
   grade = "Grade: A+"
+  document.getElementById("grade").style.color="green"
+
 }else if (marks<= data.length &&  marks>= data.length/2) {
   grade = "Grade: B+"
+  document.getElementById("grade").style.color="green"
+
 }else if (marks > 0 && marks< data.length/2) {
   grade = "Grade: C+"
+  document.getElementById("grade").style.color="orange"
 }else{
   grade = "Grade: D FAIL"
   document.getElementById("certiBtn").style.display = "none";
