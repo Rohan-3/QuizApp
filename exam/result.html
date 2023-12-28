@@ -16,14 +16,16 @@
             gap: 50px;
             flex-wrap: wrap;
         }
-        .ques
+        #coans
         {
-            border: 1px solid black;
+            color:rgb(0, 114, 0);
+            font-size:large;
+            font-weight: 700;
         }
     </style>
 </head>
 <body style="background-color: rgb(251, 253, 255);" onload="display_ques()">
-    <div>
+    <div>    
         <h1 class="resultHead">Result</h1>
     </div>
     <div class="mg" >Marks: <span id="m" class="mg"></span> <span class="mg">/</span><span id="totalq" class="mg"></span>
@@ -31,8 +33,14 @@
     <div class="certificateBtn">
         <span><a href="certificate.html"> <button id="certiBtn">View Certificate </button> </a></span></div>
     </div>
-    
-     
+    <!-- <div class="watermark">
+        <div class="image">
+            <div class="transparentbox">
+            </div>
+            </div>  
+    </div>
+      -->
+ 
     <!-- Displaying questions -->
     <div class="quesDisplay">
         <h2>Check Answers : </h2>
@@ -41,7 +49,8 @@
         </div>
     </div>
 
-
+    <div class="watermark">
+    </div>
 <link rel="stylesheet" href="certificate.css">
 </body>
 </html>

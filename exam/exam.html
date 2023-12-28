@@ -5,9 +5,12 @@
         <script src="examQuestions.js"></script>
     </head>
     <body onload="display_image();firstqes()">
+
         <div class="nav">
-            <img  class="logo"src="../images/logo2.png">
             <img src= "../images/person.jpg" class="profile" id="profile">
+            
+             <!-- <img  class="logo"src="../images/logo2.png"> -->
+
             <div class="head">
             <h2 class="" >Quiz App Examination</h2>
             <button class="support" onclick="openModel()" >Technical support</button>
@@ -30,7 +33,15 @@
             </div>
         </div>
     </div>
-
+    <div class="watermark">
+        <div class="image">
+            <div class="transparentbox">
+           
+           
+            </div>
+            </div>  
+    </div>
+    <!-- <img src= "../images/person.jpg" class="profile" id="profile"> -->
         <div class="main">
             <div class="e1">
                 <h1 id="d1">Questions</h1>
@@ -52,6 +63,8 @@
             <button  class="b1" id="backbtn" onclick="handleback()">Back</button>
             <button  class="b2" id="nextbtn" onclick="handleNext()">Next</button>
         </div>
+       
+
         <button class="submit" onclick="submit()">Submit</button></a>
         <script src="exam.js"></script>
         <script src="certificate.js"></script>

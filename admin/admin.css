@@ -57,6 +57,7 @@ body
 
 .ResBtn{
     min-width: 140px;
+    background-color: #000000;
 
 }
 
@@ -153,7 +154,7 @@ button:active
 }
 .searchbar
 {
-    position: fixed;
+    position: relative;
 }
 .homeimg
 {
@@ -187,7 +188,7 @@ hr
 .dispalynames
 {
     cursor: pointer;}
-    
+
 input{
     margin-top: 8px;
     border: none;
@@ -195,4 +196,26 @@ input{
     border-radius: 5px;
     height: 25px;
     padding: 4px;
+}
+
+.searchFilter{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.searchbar{
+    border: none;
+    background-color: #e8f0fd;
+    border-radius: 5px;
+    height: 35px;
+    padding: 8px;
+}
+
+.searchBtn{
+    padding: 8px;
+    width: 130px;
+    height: 30px;
+    margin-top: 11px;
+    background-color: #385170;
+    color: #ffff;
 }

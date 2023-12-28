@@ -156,3 +156,32 @@ button{
 .gradeDisplay{
     color: #10385a;
 }
+.watermark{
+    position:absolute;
+    left: 30%;
+    top: 20%;
+    z-index: -100;
+  }
+  .image
+    {
+    width:500px;
+    height:250px;
+    background:url(../images/logo2.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    }
+  .transparentbox
+    {
+    width:400px;
+    height:180px;
+    margin:30px 50px;
+    background-color:#f5f9ff;
+    opacity:0.8;
+    filter:alpha(opacity=20);
+    }
+  .transparentbox p
+    {
+    margin:30px 40px;
+    font-weight:bold;
+    } 
+

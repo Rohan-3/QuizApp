@@ -22,6 +22,11 @@ body {
 }
 .box{
     display: flex;
+    position: relative;
+    left: 3%;
+    justify-content: center;
+    text-align: start;
+    
     height: 70%;
 }
 h1{
@@ -49,8 +54,14 @@ border-radius: 5px;
 .addDetails{
     width: 100%;
 }
+h3{
+    position: relative;
+    left: 2%;
+}
 
 ul {
+    position: relative;
+    left: 3%;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -80,10 +91,33 @@ button:hover {
     font-size:large;
 }
 
+
 .profile
 {
     width:100px;
-    height:100px;
+    height:100px; 
+    position: relative;
     border: 1px solid;
+    margin-left: 3%;
     border-radius: 50px;
 }
+
+/* Water Marks */
+.image-container {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+  }
+  
+  .image-container::after {
+    content: "";
+    position: absolute;
+    height: 300px;
+    top: 10%; 
+    width: 250px; 
+    height: 200px; 
+    background-image: url("/images/logo2.png");
+    background-size: cover;
+    opacity: 0.3; 
+    filter:alpha(opacity=10);
+  }
