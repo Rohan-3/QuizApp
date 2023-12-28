@@ -20,6 +20,13 @@ const displaydetails=(i)=>
     document.getElementById("roll").innerHTML=allresult[i].roll;
     document.getElementById("marks").innerHTML=allresult[i].marks;
     document.getElementById("grade").innerHTML=allresult[i].grade;
+    let anslist=allresult[i].ans;
+    const a = Object.keys(anslist);
+    let val = "";
+    a.forEach((temp)=> {
+    val+=`${temp}:${anslist[temp]} `;
+    })
+    document.getElementById("ans").innerHTML=val;
 }
 
 
