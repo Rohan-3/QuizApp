@@ -1,13 +1,15 @@
 // certificate JS FILE
 const download = () =>{
 
-    let certificate = this.document.getElementById("certificate")
-    
-    console.log(certificate);
-    
-    console.log(window);
-    
-    html2pdf().from(certificate).save();
+html2canvas(document.getElementById("certificate")).then((canvas) =>{
+    let certImage = canvas.toDataURL('image/png');
+    console.log(certImage);
+
+    let pdf = new jsPDF('p', 'px', [800, 1250]);
+    pdf.addImage(certImage, 'PNG', 0,0, 800, 1265);
+    pdf.save('Certificate.pdf');
+})
+
 }
 
 const certificateData =() =>{
