@@ -1,7 +1,7 @@
 // certificate JS FILE
 const download = () =>{
 
-html2canvas(document.getElementById("certificate")).then((canvas) =>{
+html2canvas(document.getElementById("certificate"),{logging: true, letterRendering: 1 ,useCORS: true, allowTaint: true, foreignObjectRendering: true, onrendered: function(canvas){ }}).then((canvas) =>{
     let certImage = canvas.toDataURL('image/png');
     console.log(certImage);
 
