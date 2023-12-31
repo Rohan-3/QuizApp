@@ -26,6 +26,13 @@ const add=()=>
     }
     else
     {
+        document.getElementById("qno").innerText="";
+        document.getElementById("qt").innerText="";
+        document.getElementById("op1").innerText="";
+        document.getElementById("op2").innerText="";
+        document.getElementById("op3").innerText="";
+        document.getElementById("op4").innerText="";
+        document.getElementById("cans").innerText="";
         document.getElementById("output").innerHTML="question already exist";
     }
 }
@@ -48,6 +55,13 @@ const remove=()=>
     }
     else
     {
+        document.getElementById("qno").innerText="";
+        document.getElementById("qt").innerText="";
+        document.getElementById("op1").innerText="";
+        document.getElementById("op2").innerText="";
+        document.getElementById("op3").innerText="";
+        document.getElementById("op4").innerText="";
+        document.getElementById("cans").innerText="";
         document.getElementById("output").innerHTML="invalid question number"
     }
 }
@@ -71,11 +85,17 @@ const update=()=>
         document.getElementById("op3").innerText=data[0].op3;
         document.getElementById("op4").innerText=data[0].op4;
         document.getElementById("cans").innerText=data[0].cans;
-        questions=questions.filter((temp)=>temp.qno===qno);
         document.getElementById("output").innerHTML="question updated successfully";
     }
     else
     {
+        document.getElementById("qno").innerText="";
+        document.getElementById("qt").innerText="";
+        document.getElementById("op1").innerText="";
+        document.getElementById("op2").innerText="";
+        document.getElementById("op3").innerText="";
+        document.getElementById("op4").innerText="";
+        document.getElementById("cans").innerText="";
         document.getElementById("output").innerHTML="invalid question number";
     }
 }
@@ -92,9 +112,17 @@ const search=()=>
         document.getElementById("op3").innerText=data[0].op3;
         document.getElementById("op4").innerText=data[0].op4;
         document.getElementById("cans").innerText=data[0].cans;
+        document.getElementById("output").innerHTML=" ";
     }
     else
     {
+        document.getElementById("qno").innerText="";
+        document.getElementById("qt").innerText="";
+        document.getElementById("op1").innerText="";
+        document.getElementById("op2").innerText="";
+        document.getElementById("op3").innerText="";
+        document.getElementById("op4").innerText="";
+        document.getElementById("cans").innerText="";
         document.getElementById("output").innerHTML="invalid question number";
     }
 }
